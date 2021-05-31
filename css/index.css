@@ -1,0 +1,157 @@
+#main{
+    background: #E4F1EF;
+    padding: 20px 50px 0 50px;
+    position: relative;
+    height: 1000px;
+}
+
+.main{
+    margin: 0 50px;
+    position: relative;
+}
+
+.main_content{
+    width: 450px;
+}
+
+.main_content h1{
+    font-family: 'Bebas Neue', arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    color: #1C1D2B;
+    text-transform: uppercase;
+}
+
+.main_content p{
+    width: 280px;
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #1C1D2B;
+    margin: 45px 0px;
+}
+
+.main_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -150px;
+}
+
+.main_info_text h3{
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: normal;
+    color: #1C1D2B;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+h3 span{
+    font-size: 18px;
+}
+
+.main_title span{
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1C1D2B;
+}
+
+.main_title h2{
+    font-family: 'Bebas Neue', arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 168px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.main_info_text{
+    padding-top: 100px;
+}
+
+.main_title{
+    margin-top: -165px;
+}
+
+.carousel{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    top: -5%;
+    right: 0%;
+}
+
+.flickity-prev-next-button.previous,.flickity-prev-next-button.next{
+    display: none;
+}
+
+.banner{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 1.72989px 12.1092px 2.59483px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    top: -5%;
+    right: 0%;
+    display: flex;
+}
+
+.flickity-viewport{
+    border-radius: 8px;
+}
+
+.banner_img img{
+    border-radius:  8px 0 0 8px;
+}
+
+.banner_text{
+    padding: 25px 12px;
+}
+
+.banner_text p{
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #1C1D2B;
+    padding:15px 0;
+    width: 150px;
+}
+
+.banner_text span{
+    font-family: Geometria;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #7E8C94;
+}
+
+#bg{
+    position: absolute;
+    bottom: 0;
+    height: 1000px;
+    left: 15%;
+}
+
+ @media screen and(max-width:1250px){
+    .container{
+        max-width: 1000px;
+    }
+    #bg {
+        left: -10%;
+    }
+    .main_info_text h3{
+        font-size:100px ;
+    }
+}
+
