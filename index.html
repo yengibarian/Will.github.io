@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">    
-    <link rel="stylesheet" href="css/about.css">
+    <!-- sldie -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- css -->
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 <body>
-
-    <header style='background: #E4F1EF;margin:50px 50px 0 50px; width: auto;'>
+   <header>
         <div class="container">
-          <div class="header" style='justify-content: flex-start;'>
+          <div class="header">
             <div class="menu" >
                 <div class="menu_btn" style="z-index: 1000;">
                     <div class="burger">
@@ -22,17 +21,18 @@
                     </div>
                     <span><a href="#" >меню</a></span>
                 </div>
+                <span class='imgH'><a href="#">выбрать квартиру</a></span>
+            </div>
+             <div class="logo">
+                <img src="img/logo_willtowers.png" alt="">
             </div>
             <div class="nav">
                 <nav>
                     <ul>
-                        <li class='img'><a href="#">выбрать квартиру</a></li>
                         <li><a href="#">+7 (495) 123-45-67</a></li>
+                        <li><a class='phone' href="">заказать звонок</a></li>
                     </ul>
                 </nav>
-            </div>
-             <div class="logo" style='margin:0 50px'>
-                <img src="img/logo_willtowers.png" alt="">
             </div> 
           <div class="menu_open">
             <div class="for_nav" id='menu_open' style='flex-direction: column;'>
@@ -69,118 +69,385 @@
           </div>
         </div>
     </header>
-    <section id='main'>
-      <img src="img/img_towers.png" alt="" id="bg">
-        <div class="container">
-            <div class="main">
-              <div class="carousel" data-flickity>
-                <div class="carousel-cell banner">
-                    <div class="banner_img">
-                      <img src="img/Frame 7.png" alt="">
-                    </div>
-                    <div class="banner_text">
-                      <p>Специальные условия на ограниченный пул квартир</p>
-                      <span>до 01 сентября </span>
-                    </div>
-                </div>
-                <div class="carousel-cell banner">
-                  <div class="banner_img">
-                    <img src="img/Frame 7.png" alt="">
-                  </div>
-                  <div class="banner_text">
-                    <p>Специальные условия на ограниченный пул квартир</p>
-                    <span>до 01 сентября </span>
-                  </div>
-                </div>
-                <div class="carousel-cell banner">
-                  <div class="banner_img">
-                    <img src="img/Frame 7.png" alt="">
-                  </div>
-                  <div class="banner_text">
-                    <p>Специальные условия на ограниченный пул квартир</p>
-                    <span>до 01 сентября </span>
-                  </div>
-                </div>
-              </div>
-                <div class="main_content">
-                    <h1>Жилые небоскрёбы бизнес-класса в раменках</h1>
-                    <p>Новая доминанта в одном из самых зелёных районов столицы, где продумана каждая деталь, чтобы вы могли забыть о мелочах и сосредоточиться на главном — будущих свершениях на новой высоте.</p>
-                    <button>
-                        <a href="about.html">о проекте </a>
-                    </button>
-                </div>
+    <!-- section 1 -->
+    <section style='position: relative;'>
+      <div id="phone">
+        <div class="close">
+            <div class="close_item">
 
-                <div class="main_info">
-                    <div class="main_info_img">
-                        <img id='bg_img' src="img/img_sl1.png" alt="">
-                    </div>
-                    <div class="main_info_text">
-                        <h3 class='main_info_text_number'>3 <span> небоскреба</span> </h3>
-                        <h3 class='main_info_text_number'>52-56  <span> этажей</span> </h3>
-                        <h3 class='main_info_text_number'>1906<span>  квартир</span> </h3>
-                    </div>
-                </div>
-                <div class="main_title">
-                    <span>я буду</span>
-                    <h2>вдохновлять</h2>
-                </div>
             </div>
         </div>
-    </section>
-    <footer>
-        <div class="container">
-          <div class="footer">
-            <div class="for_logo">
-              <img src="img/Group 1.png" alt="">
-              <p>Жилые небоскребы бизнес-класса</p>
+        <div class="phone">
+            <div class="phone_title">
+                <h4>заказать звонок</h4>
+                <p>Мы с удовольствием ответим на ваши вопросы и проконсультируем!</p>
             </div>
-            <div class="for_nav">
-              <nav>
-                <ul>
-                  <li><a href="#">Квартиры на генплане</a></li>
-                  <li><a href="#">Квартиры по параметрам</a></li>
-                  <li><a href="#">Квартиры по типу планировки</a></li>
-                </ul>
-              </nav>
-              <nav>
-                <ul>
-                  <li><a style='color:#7E8C94' href="#">О проекте</a></li>
-                  <li><a href="#">Инфраструктура</a></li>
-                  <li><a href="#">Окружение</a></li>
-                  <li><a href="#">Галерея проекта</a></li>
-                  <li><a href="#">Динамика стротельства</a></li>
-                  <li><a href="#">Акции и Новости</a></li>
-                  <li><a href="#"> Условия приобретения</a></li>
-                  <li><a href="#">Коммерческие помещения</a></li>
-                  <li><a href="#">Команда проекта</a></li>
-                  <li><a href="#">Документы</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>
-              </nav>
-              <nav>
-                <ul>
-                    <li><a style='color:#7E8C94' href='#'>ждем вас в офисе продаж!</a></li>
-                    <li><a style='color: #E4F1EF;' href="#">Москва, ЗАО</a></li>
-                    <li><a style='color: #E4F1EF;' href="#">Раменки, проспект Генерала</a></li>
-                    <li><a style='color: #E4F1EF;' href="#">Дорохова</a></li>
-                    <li><a href="#">пн-вс   09:00 – 21:00</a></li>
-                    <li><a style='color: #E4F1EF;' href="#">+7 (495) 123-45-76</a></li>
-                </ul>
-              </nav>
+            <div class="phone_form">
+              <form action="">
+                <input type="text" placeholder='Имя'>
+                <input type="text" placeholder='Телефон'>
+                <div class="checkbox">
+                  <input type="checkbox" checked id='checkbox'>
+                  <label for="checkbox" >Согласен на обработку персональных данных</label>
+                </div>
+                <input type="submit" value='отправить'>
+              </form>
             </div>
-            <div class="for_text">
-              <p>Информация на данном сайте носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой, определяемой положениями статьи 437 Гражданского Кодекса Российской Федерации. Политика конфиденциальности</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <h1>о проекте</h1>
+          <div class="item">
+            <div class="content_title">
+              <span>я буду</span>
+              <h2>вдохновлять</h2>
+            </div>
+            <div class="content_text">
+              <p>Небоскрёбы Will Towers диктуют новые правила: бескомпромиссное превосходство жизни в динамичном ритме мегаполиса в одном из самых престижных районов Москвы.</p> 
             </div>
           </div>
+          <div class="img">
+            <img src="img/img_about_2.png" alt="">
+          </div>
         </div>
-    </footer> 
+      </div>
+    </section>
 
+    <!-- section 2 -->
+    <section  style="margin: 0"> 
+        <img width="100%" src="img/Frame5.png" alt="">
+    </section>
+    
+    <!-- section 3 -->
+    <section>
+      <div class="container">
+        <div class="content">
+          <div class="content_title">
+            <span>территория</span>
+            <h2>преимуществ</h2>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+    <!-- section 4 -->
+    <section id='for-slide' class='for-slide'>
+      <div class="for_slide carusel " data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+           <div class="carousel-cell_img">
+             <img src="img/img_slider_1.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+              <h4>великолепные виды</h4>
+              <p>Наблюдать, как фантастические закаты сменяются рассветами, любоваться головокружительными видами на город и долину реки из панорамных окон небоскреба.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+           <div class="carousel-cell_img">
+            <img src="img/img_slider_2.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+              <h4>собственный парк у реки</h4>
+              <p>
+                Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+           <div class="carousel-cell_text">
+              <h4>10 зон досуга во дворе</h4>
+              <p>Отправиться на утреннюю пробежку, выпить кофе в уютном кафе, позаниматься йогой, собрать компанию друзей на BBQ или прогуляться по оранжерее — во дворе масса возможностей для разнообразного досуга.</p>
+          </div>
+          <div class="carousel-cell_img">
+            <img src="img/img_slider_3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 5 -->
+    <section>
+      <div class="container">
+        <div class="content">
+          <div class="content_title">
+            <span>сокращая</span>
+            <h2>расстояния</h2>
+          </div>
+          <div class="content_text_big">
+            <div class="content_text_item">
+              <p>Will Towers имеет свой съезд на проспект Генерала Дорохова и удобно расположен относительно автомагистралей — вам не придётся тратить время на дорогу, ведь гораздо приятнее провести его с близкими.</p>
+            </div>
+            <div class="content_text_item">
+              <h3>4 км</h3>
+              <span>до ТТК</span> </div>
+            <div class="content_text_item">
+              <h3>6 км</h3>
+              <span>до МКАДа</span>
+            </div>
+            <div class="content_text_item">
+              <h3>9 км</h3>
+              <span>до Садового кольца</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 6 -->
+    <section style='margin:0'>
+      <img width="100%" src="img/Frame5.png" alt="">
+    </section>
+
+    <!-- section 7 -->
+    <section>
+      <div class="container">
+        <div class="content">
+          <div class="content_title">
+            <span>вдохновляясь</span>
+            <h2>архитектурой</h2>
+          </div>
+          <div class="content_about">
+              <div class="content_about_item">
+                <p>Выразительная архитектура небоскрёбов Will Towers, отсылающая к знаменитой панораме Чикаго, делает их вечной классикой мегаполиса, которая будет не менее актуальной и спустя десятилетия.</p>
+                <button>
+                  <a href="#">смотреть галерею</a>
+                </button>
+                <img src="img/Frame 4.png" alt="">
+              </div>
+              <div class="content_about_item">
+                <img src="img/Frame 3.png" alt="">
+                <p>Архитектурное решение комплекса создало бюро «СПИЧ» во главе с Сергеем Чобаном — автором множества амбициозных проектов по всему миру. Все три здания объединяют общие черты. Выступающие пилоны рождают красивую игру света и тени на плоскости фасада и подчёркивают вертикальную динамику линий. А принцип горизонтального членения здания на блоки создаёт соразмерные человеку пропорции, придаёт цельность и завершённость архитектурному объёму.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 8 -->
+    <section>
+      <div class="container">
+          <div class="content_title">
+            <span>безграничные</span>
+            <h2>возможности</h2>
+          </div>
+      </div>
+    </section>
+    <!-- section 9 -->
+    <section id='for-slide' class='for-slide'>
+      <div class="for_slide carusel " data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+           <div class="carousel-cell_img">
+             <img src="img/img_slider_4.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+              <h4>пятиэтажный паркинг на 1026 машиномест</h4>
+              <p>Наблюдать, как фантастические закаты сменяются рассветами, любоваться головокружительными видами на город и долину реки из панорамных окон небоскреба.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+           <div class="carousel-cell_img">
+            <img src="img/img_slider_5.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+              <h4>панорамные окна, которые можно открыть</h4>
+              <p>
+                Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell_img">
+           <img src="img/img_slider_6.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+             <h4>охрана и видеонаблюдение</h4>
+             <p>
+               Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell_img">
+           <img src="img/img_slider_7.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+             <h4>кладовые  помещения через каждые 2 этажа</h4>
+             <p>
+               Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell_img">
+           <img src="img/img_slider_8.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+             <h4>приватная территория со своей инфраструктурой</h4>
+             <p>
+               Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell_img">
+           <img src="img/img_slider_9.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+             <h4>возможности для ваших детей</h4>
+             <p>
+               Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell_img">
+           <img src="img/img_slider_10.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+             <h4>высокоскоростные лифты KONE</h4>
+             <p>
+               Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell_img">
+           <img src="img/img_slider_11.png" alt="">
+          </div>
+          <div class="carousel-cell_text">
+             <h4>скрытые ниши для кондиционеров</h4>
+             <p>
+               Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-cell_text">
+             <h4>первоклассная инженерия</h4>
+             <p>
+               Прогулки у воды и отдых на природе станут доступным удовольствием в паре шагов от дома: благоустроенная территория Will Towers расположена на берегу реки Раменки.</p>
+          </div>
+          <div class="carousel-cell_img">
+            <img src="img/img_slider_12.png" alt="">
+           </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 10 -->
+    <section>
+      <div class="container">
+        <div class="content">
+          <div class="content_title">
+            <span>свобода</span>
+            <h2>выбора</h2>
+          </div>
+          <div class="content_about">
+              <div class="content_about_item">
+                <p>Will Towers — это более 20 оригинальных форматов квартир площадью от 26 до 165 м² от студий до пятикомнатных, а также возможность свободной планировки и объединения для функциональных интерьеров согласно вашим пожеланиям.
+                </p>
+                <button>
+                  <a href="#">выбрать квартиру</a>
+                </button>
+                <img src="img/Frame 13.png" alt="">
+              </div>
+              <div class="content_about_item">
+                <img src="img/Frame 14.png" alt="">
+                <p>На каком бы варианте вы не остановились, он позволит наслаждаться всеми преимуществами жизни в небоскребе. Панорамные окна дарят ощущение простора и наполняют пространства воздухом и светом, а отсутствие высотной застройки рядом и выгодное расположение гарантируют потрясающий вид на город и долину реки даже на нижних этажах.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- section 11 -->
+        <section>
+          <div class="container">
+            <div class="content">
+              <div class="content_title">
+                <span>квартиры с террасами</span>
+                <h2>на новой высоте</h2>
+              </div>
+              <div class="content_text_big">
+                <div class="content_text_item">
+                  <p>На последних этажах Will Towers расположатся роскошные пентхаусы с  террасами. Устройте собственное патио или лаундж-зону, у подножия которой окажется весь город, и наслаждайтесь солнцем в кругу близких в любое время года — эстетика окружения сочетается здесь с исключительной приватностью.</p>
+                </div>
+                <div class="content_text_item">
+                  <h3>12</h3>
+                  <span>уникальных лотов</span> </div>
+                <div class="content_text_item">
+                  <h3>3,7 м</h3>
+                  <span>до МКАДа</span>
+                </div>
+                <div class="content_text_item">
+                  <h3>52-56</h3>
+                  <span>этажи с пентхаусами</span></div>
+              </div>
+              <div class='img'>
+                <img src="img/sl_1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section 12 -->
+        <section style='background-color: white;'>
+          <div class="container" >
+            <div class="last">
+              <p>Will Towers. я буду.</p>
+              <button stle='margin:30px 0'>
+                <a style='background-color: #DDE3E2;' href="#">выбрать квартиру</a>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="container">
+            <div class="footer">
+              <div class="for_logo">
+                <img src="img/Group 1.png" alt="">
+                <p>Жилые небоскребы бизнес-класса</p>
+              </div>
+              <div class="for_nav" id='for_nav'>
+                <nav>
+                  <ul>
+                    <li><a href="#">Квартиры на генплане</a></li>
+                    <li><a href="#">Квартиры по параметрам</a></li>
+                    <li><a href="#">Квартиры по типу планировки</a></li>
+                  </ul>
+                </nav>
+                <nav>
+                  <ul>
+                    <li><a style='color:#7E8C94' href="#">О проекте</a></li>
+                    <li><a href="#">Инфраструктура</a></li>
+                    <li><a href="#">Окружение</a></li>
+                    <li><a href="#">Галерея проекта</a></li>
+                    <li><a href="#">Динамика стротельства</a></li>
+                    <li><a href="#">Акции и Новости</a></li>
+                    <li><a href="#"> Условия приобретения</a></li>
+                    <li><a href="#">Коммерческие помещения</a></li>
+                    <li><a href="#">Команда проекта</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </nav>
+                <nav>
+                  <ul>
+                      <li><a style='color:#7E8C94' href='#'>ждем вас в офисе продаж!</a></li>
+                      <li><a style='color: #E4F1EF;' href="#">Москва, ЗАО</a></li>
+                      <li><a style='color: #E4F1EF;' href="#">Раменки, проспект Генерала</a></li>
+                      <li><a style='color: #E4F1EF;' href="#">Дорохова</a></li>
+                      <li><a href="#">пн-вс   09:00 – 21:00</a></li>
+                      <li><a style='color: #E4F1EF;' href="#">+7 (495) 123-45-76</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="for_text">
+                <p>Информация на данном сайте носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой, определяемой положениями статьи 437 Гражданского Кодекса Российской Федерации. Политика конфиденциальности</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+<!-- slide -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
   <!-- main js -->
   <script src="js/main.js"></script>
 </body>
